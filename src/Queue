@@ -1,0 +1,34 @@
+/*
+ * Queue
+ *
+ *  Created on: Dec 16, 2016
+ *      Author: katka
+ */
+
+struct Node{
+	int data;
+	struct Node* next;
+};
+
+void ExplicitQueue(){
+	struct Node *front = 0;
+	struct Node *end = 0;
+}
+
+int queueSize() {
+	int velkost = 0;
+	return velkost;
+}
+
+void clear() {}
+bool isEmpty() {}
+
+Prvok push(const Prvok& data) {
+
+}
+
+Prvok pop() {}
+
+Prvok& peek() {}
+
+
