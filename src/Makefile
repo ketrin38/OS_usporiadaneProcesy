@@ -1,8 +1,8 @@
 CC=gcc
 CFLAGS=-std=c99 -Wall -Wextra -O2 -s -pedantic -pipe -I.
-OBJ=aout.o app.o main.o server.o
+OBJ=Front.o Main.o
 LIBS=-lpthread
-APPNAME=frinc
+APPNAME=usp_procesy
 RES_DIR=../bin
 
 all: $(OBJ)
