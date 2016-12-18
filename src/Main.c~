@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 #include "Front.h"
+#include "Parser.h"
 
 int main() {
-	Front* frontSemafor = up_front_vytvor();
+	/*Front* frontSemafor = up_front_vytvor();
 	printf("%d\n",up_front_daj_poc_prvkov(frontSemafor));
 	int a = 5;
 	int b = 8;
@@ -14,6 +16,7 @@ int main() {
 	while(!up_front_je_prazdny(frontSemafor)){
 		printf("%d\n",*(int *)up_front_pop(frontSemafor));
 	}
-	up_front_zrus(frontSemafor);
+	up_front_zrus(frontSemafor);*/
+	up_parser_nacitaj_subor ("../resources/semestralkaStruktura.txt");
 	return 0;
 } 

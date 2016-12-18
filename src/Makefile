@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-std=c99 -Wall -Wextra -O2 -s -pedantic -pipe -I.
-OBJ=Front.o Main.o
+OBJ=Front.o Main.o Parser.o
 LIBS=-lpthread
 APPNAME=usp_procesy
 RES_DIR=../bin
