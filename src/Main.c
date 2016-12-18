@@ -18,5 +18,6 @@ int main() {
 	}
 	up_front_zrus(frontSemafor);*/
 	up_parser_nacitaj_subor ("./resources/semestralkaStruktura.txt");
+	
 	return 0;
 } 

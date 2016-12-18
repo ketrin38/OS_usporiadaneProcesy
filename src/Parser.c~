@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "Matica.h"
 #include "Parser.h"
 
 #define MAX_POCET_RIADKOV 3
@@ -11,13 +12,13 @@
 
 #define ZNAK_NA_CISLO(z) ((z) - '0')
 
+
 static char** nacitaj_subor_pamat(const char* nazov_suboru, int* poc_riadkov);
 static void zrus_subor_pamat (char **buffer, int poc_riadkov);
 
 static void nacitaj_riadok (const char** buffer, int** inc_matica,
 	int riadok_index, int predosly_proces, int poz, int poc_riadkov);
-static int** nacitaj_inc_maticu (const char** buffer, int riadok_index,
-	int predosly_proces);
+static Matica* nacitaj_inc_maticu (const char** buffer);
 
 int** up_parser_nacitaj_subor(const char* nazov_suboru) {
 	int poc_riadkov;
@@ -25,6 +26,18 @@ int** up_parser_nacitaj_subor(const char* nazov_suboru) {
 	
 	for (int i = 0; i < poc_riadkov; i++) {
 		printf("buffer[%d] = '%s'\n", i, buffer[i]);
+	}
+	
+	Matica* matica = nacitaj_inc_maticu(buffer);
+	
+	int **pole = up_matica_vrat_pole(matica);
+	size_t velkost = up_matica_daj_velkost(matica);
+	printf("Matica:\n");
+	for (int i = 0; i < velkost; i++) {
+		for (int j = 0; j < velkost; j++) {
+			printf("%d,", pole[i][j]);
+		}
+		printf("\n");
 	}
 	
 	return NULL;
@@ -118,8 +131,10 @@ static void nacitaj_riadok (const char** buffer, int** inc_matica,
 	}
 }
 
-static int** nacitaj_inc_maticu (const char** buffer, int riadok_index,
-	int predosly_proces)
+static Matica* nacitaj_inc_maticu (const char** buffer)
 {
+	Matica* matica = up_matica_vytvor(5);
+	nacitaj_riadok(buffer, up_matica_vrat_pole(matica), 2, 0, 0, 3);
+	return matica;
 }
 
