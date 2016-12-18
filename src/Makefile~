@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-std=c99 -Wall -Wextra -O2 -s -pedantic -pipe -I.
+CFLAGS=-std=c99 -Wall -Wextra -g -pedantic -pipe -I.
 OBJ=Front.o Main.o Parser.o Matica.o
-LIBS=-lpthread
+#LIBS=-lpthread
 APPNAME=usp_procesy
 RES_DIR=../bin
 

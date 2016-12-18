@@ -14,7 +14,7 @@
 
 
 static char** nacitaj_subor_pamat(const char* nazov_suboru, int* poc_riadkov);
-static void zrus_subor_pamat (char **buffer, int poc_riadkov);
+//static void zrus_subor_pamat (char **buffer, int poc_riadkov);
 
 static void nacitaj_riadok (const char** buffer, int** inc_matica,
 	int riadok_index, int predosly_proces, int poz, int poc_riadkov);
@@ -28,14 +28,14 @@ int** up_parser_nacitaj_subor(const char* nazov_suboru) {
 		printf("buffer[%d] = '%s'\n", i, buffer[i]);
 	}
 	
-	Matica* matica = nacitaj_inc_maticu(buffer);
+	Matica* matica = nacitaj_inc_maticu((const char **) buffer);
 	
 	int **pole = up_matica_vrat_pole(matica);
 	size_t velkost = up_matica_daj_velkost(matica);
 	printf("Matica:\n");
-	for (int i = 0; i < velkost; i++) {
-		for (int j = 0; j < velkost; j++) {
-			printf("%d,", pole[i][j]);
+	for (size_t i = 0; i < velkost; i++) {
+		for (size_t j = 0; j < velkost; j++) {
+			printf("%8d,", pole[i][j]);
 		}
 		printf("\n");
 	}
@@ -84,19 +84,18 @@ static char** nacitaj_subor_pamat(const char* nazov_suboru, int* poc_riadkov) {
 	return buffer;
 } 
 
-static void zrus_subor_pamat (char **buffer, int poc_riadkov)
+/*static void zrus_subor_pamat (char **buffer, int poc_riadkov)
 {
 	for (int i = 0; i < poc_riadkov; i++) {
 		free ((void *) buffer[i]);
 	}
 	
 	free ((void *) buffer);
-}
+}*/
 
 static void nacitaj_riadok (const char** buffer, int** inc_matica,
 	int riadok_index, int predosly_proces, int poz, int poc_riadkov)
 {
-	int aktualny_proces;
 	int spoj = 0;
 	int i = poz;
 	char aktualny_znak = buffer[riadok_index][i];
@@ -106,8 +105,8 @@ static void nacitaj_riadok (const char** buffer, int** inc_matica,
 			int cislo_proc = (int) ZNAK_NA_CISLO(aktualny_znak);
 			if (predosly_proces == 0) {
 			} else {
-				int hodnota = spoj ? -1 : 1; 
-				inc_matica[predosly_proces-1][cislo_proc-1] = hodnota;
+				int hodnota = spoj ? -1 : 1;
+				inc_matica[predosly_proces - 1][cislo_proc - 1] = hodnota;
 			}
 			predosly_proces = cislo_proc;
 		} else if (aktualny_znak == '*') {
@@ -118,13 +117,13 @@ static void nacitaj_riadok (const char** buffer, int** inc_matica,
 			char znak_vyssie = buffer[riadok_index - 1][i];
 			if (znak_vyssie == '/') {
 				nacitaj_riadok(buffer, inc_matica, riadok_index - 2,
-					predosly_proces, poz, poc_riadkov);
+					predosly_proces, i, poc_riadkov);
 			}
 		} else if (riadok_index < (poc_riadkov - 1)) {
 			char znak_nizsie = buffer[riadok_index + 1][i];
 			if (znak_nizsie == '\\') {
 				nacitaj_riadok(buffer, inc_matica, riadok_index + 2,
-					predosly_proces, poz, poc_riadkov);
+					predosly_proces, i, poc_riadkov);
 			}
 		}
 		i++;

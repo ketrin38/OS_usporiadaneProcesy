@@ -31,14 +31,7 @@ int** up_parser_nacitaj_subor(const char* nazov_suboru) {
 	Matica* matica = nacitaj_inc_maticu((const char **) buffer);
 	
 	int **pole = up_matica_vrat_pole(matica);
-	size_t velkost = up_matica_daj_velkost(matica);
-	printf("Matica:\n");
-	for (size_t i = 0; i < velkost; i++) {
-		for (size_t j = 0; j < velkost; j++) {
-			printf("%8d,", pole[i][j]);
-		}
-		printf("\n");
-	}
+	up_matica_vypis(matica);
 	
 	return NULL;
 } 
