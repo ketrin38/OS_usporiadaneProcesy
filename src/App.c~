@@ -114,8 +114,8 @@ static Proces* proces_vytvor(sem_t* semafor, void* proces_funkcia){
 }
 
 static void proces_vykonaj(Proces* proces) {
-    printf("pred WHILEEE\n");
 	while(1) {
+		printf("vo WHILEEE\n");
 		int hodnota;
 		sem_getvalue(proces->semafor, &hodnota);
 	    printf("pred waitom, semafor hodnota = %d\n", hodnota);

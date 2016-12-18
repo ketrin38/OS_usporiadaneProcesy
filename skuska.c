@@ -17,7 +17,7 @@ int main(void)
   sem_post(sem);
 
   if(child > 0)
-  {
+  {gii
     int status;
     printf("parent done, waiting for child\n");
     wait(&status);

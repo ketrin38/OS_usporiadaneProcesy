@@ -5,7 +5,7 @@
 
 Front* up_front_vytvor() {
 	Front* inst = (Front*)malloc(sizeof(Front));
-	inst->pole = (int*)malloc(POVODNA_VELKOST * sizeof(int *));
+	inst->pole = (int*)malloc(POVODNA_VELKOST * sizeof(int));
 	inst->poc_prkov = 0;
 	inst->akt_pozicia_pop = 0;
 	inst->akt_pozicia_push = 0;
