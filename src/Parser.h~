@@ -1,11 +1,9 @@
 #ifndef PARSER_H
 #define PARSER_H
 
+#include "Matica.h"
 
-typedef struct _MATICA {
-	int** pole;
-	size_t velkost;
-} MATICA;
-extern int** up_parser_nacitaj_subor(const char* nazov_suboru);
+extern Matica** up_parser_nacitaj_subor(const char* nazov_suboru);
+
 
 #endif

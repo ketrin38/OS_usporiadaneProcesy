@@ -3,6 +3,7 @@
 
 #include "Front.h"
 #include "Parser.h"
+#include "App.h"
 
 int main() {
 	/*Front* frontSemafor = up_front_vytvor();
@@ -17,6 +18,10 @@ int main() {
 		printf("%d\n",*(int *)up_front_pop(frontSemafor));
 	}
 	up_front_zrus(frontSemafor);*/
-	up_parser_nacitaj_subor ("../resources/semestralkaStruktura.txt");
+	
+	App* app = up_app_vytvor("./resources/semestralkaStruktura.txt");
+	up_app_spsuti(app);
+	up_app_zrus(app);
+	
 	return 0;
 } 
