@@ -20,7 +20,7 @@ static void nacitaj_riadok (const char** buffer, int** inc_matica,
 	int riadok_index, int predosly_proces, int poz, int poc_riadkov);
 static Matica* nacitaj_inc_maticu (const char** buffer);
 
-Matica** up_parser_nacitaj_subor(const char* nazov_suboru) {
+Matica* up_parser_nacitaj_subor(const char* nazov_suboru) {
 	int poc_riadkov;
 	char** buffer = nacitaj_subor_pamat (nazov_suboru, &poc_riadkov);
 	
