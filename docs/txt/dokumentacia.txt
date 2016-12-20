@@ -1,0 +1,51 @@
+		DOKUMENTACIA K SEMESTRALNEJ PRACI
+	
+	
+	
+	**************      ZADANIE : Usporiadane procesy (1)      *****************
+	
+	POPIS : 
+Napíšte s použitím semaforov programovú štruktúru piatich procesov, 
+ktorých vykonanie bude usporiadané v čase podľa orientovaného grafu, 
+ktorého štruktúra je zadaná v súbore. Štruktúra je nasledovná:
+	
+	     .->(P2)--->(P3)-.
+	    /                 \
+	(P1)----->(P4)---------*->(P5)
+	
+Každý proces sa spustí až vtedy, keď sa jeho predchodca skončí 
+(pre názornosť proces by mal používať pre svoj výpočet výsledky 
+svojho/svojich predchodcu/ov). Navrhnite vhodné činností procesov, 
+aby z výstupu bolo zrejme, že poradie vykonávania bolo dodržané.
+	
+	VSTUP : 
+Názov súboru štruktúry orientovaného grafu.
+	
+	VYSTUP :
+Výpis vstupu a výsledku spracovania dát po ukončení každého procesu.
+	
+	TESTOVANIE : 
+Výsledok po ukončení piateho procesu musí zodpovedať 
+očakávanému výsledku.
+	
+	*********************      RIESENIE PROBLEMU      **************************
+	
+	Kedze vstupny parameter bol nazov suboru s orientovanym grafom bolo ho nutne
+ nacitat jeho obsah - orientovany graf.
+	Nasledne bolo potrebne zistit, ktore procesy sa musia vykonat skor, ako dany 
+proces P. Tieto udaje boli zapisovane do pomocnej struktury incidencnej matice 
+o velkosti poctu procesov. Pomocna struktura incidencnej matice bola zvolena
+z dovodu neefektivnosti vytvarania procesov priamo zo struktury orientovaneho
+grafu ulozeneho vo vstupnom subore.
+ 
+	Udaj v matici (matica[i][j]) :
+* 1   proces v i bol predchodca procesu j
+* 0   proces v i nebol predchodca procesu j
+
+
+
+
+	
+	
+	
+	

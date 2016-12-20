@@ -1,0 +1,135 @@
+\hypertarget{Matica_8c}{}\section{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Matica.c File Reference}
+\label{Matica_8c}\index{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Matica.\+c@{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Matica.\+c}}
+
+
+Modul zodpoveny za riadenie a vytvorenie incidencnej matice.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Matica.\+h\char`\"{}}\\*
+Include dependency graph for Matica.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{Matica_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Matica_8h_a785a7a4c713ff8e23354dd49e33b1fef}{Matica} $\ast$ \hyperlink{Matica_8c_ada67edbf7d426d1e1fda7d379344ea27}{up\+\_\+matica\+\_\+vytvor} (size\+\_\+t velkost\+\_\+strany)
+\begin{DoxyCompactList}\small\item\em Inicializacia matice. \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \hyperlink{Matica_8c_a2a2da1386f6c15a5d424ee4bd9750f66}{up\+\_\+matica\+\_\+vrat\+\_\+pole} (\hyperlink{Matica_8h_a785a7a4c713ff8e23354dd49e33b1fef}{Matica} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Vrati pole matice. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{Matica_8c_ac145e2dc659ccefbda6c2bb76cdd9030}{up\+\_\+matica\+\_\+daj\+\_\+velkost} (\hyperlink{Matica_8h_a785a7a4c713ff8e23354dd49e33b1fef}{Matica} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Vrati velkost matice. \end{DoxyCompactList}\item 
+void \hyperlink{Matica_8c_a36faa601f0d5f5defe12cc0ce6b27fe1}{up\+\_\+matica\+\_\+vypis} (\hyperlink{Matica_8h_a785a7a4c713ff8e23354dd49e33b1fef}{Matica} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Vypise maticu na obrazovku. \end{DoxyCompactList}\item 
+void \hyperlink{Matica_8c_aa122f233d1f23bf8c4a84ab54aef6d01}{up\+\_\+matica\+\_\+zrus} (\hyperlink{Matica_8h_a785a7a4c713ff8e23354dd49e33b1fef}{Matica} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Zrusi maticu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Modul zodpoveny za riadenie a vytvorenie incidencnej matice. 
+
+\begin{DoxyAuthor}{Author}
+Katarina Pilarcikova $<$\href{mailto:ketrin.pilarcik@gmail.com}{\tt ketrin.\+pilarcik@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Dec 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Matica.\+c@{Matica.\+c}!up\+\_\+matica\+\_\+daj\+\_\+velkost@{up\+\_\+matica\+\_\+daj\+\_\+velkost}}
+\index{up\+\_\+matica\+\_\+daj\+\_\+velkost@{up\+\_\+matica\+\_\+daj\+\_\+velkost}!Matica.\+c@{Matica.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+matica\+\_\+daj\+\_\+velkost(\+Matica $\ast$inst)}{up_matica_daj_velkost(Matica *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t up\+\_\+matica\+\_\+daj\+\_\+velkost (
+\begin{DoxyParamCaption}
+\item[{{\bf Matica} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Matica_8c_ac145e2dc659ccefbda6c2bb76cdd9030}{}\label{Matica_8c_ac145e2dc659ccefbda6c2bb76cdd9030}
+
+
+Vrati velkost matice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia matice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Velkost matice. 
+\end{DoxyReturn}
+\index{Matica.\+c@{Matica.\+c}!up\+\_\+matica\+\_\+vrat\+\_\+pole@{up\+\_\+matica\+\_\+vrat\+\_\+pole}}
+\index{up\+\_\+matica\+\_\+vrat\+\_\+pole@{up\+\_\+matica\+\_\+vrat\+\_\+pole}!Matica.\+c@{Matica.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+matica\+\_\+vrat\+\_\+pole(\+Matica $\ast$inst)}{up_matica_vrat_pole(Matica *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ up\+\_\+matica\+\_\+vrat\+\_\+pole (
+\begin{DoxyParamCaption}
+\item[{{\bf Matica} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Matica_8c_a2a2da1386f6c15a5d424ee4bd9750f66}{}\label{Matica_8c_a2a2da1386f6c15a5d424ee4bd9750f66}
+
+
+Vrati pole matice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia matice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pole matice. 
+\end{DoxyReturn}
+\index{Matica.\+c@{Matica.\+c}!up\+\_\+matica\+\_\+vypis@{up\+\_\+matica\+\_\+vypis}}
+\index{up\+\_\+matica\+\_\+vypis@{up\+\_\+matica\+\_\+vypis}!Matica.\+c@{Matica.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+matica\+\_\+vypis(\+Matica $\ast$inst)}{up_matica_vypis(Matica *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+matica\+\_\+vypis (
+\begin{DoxyParamCaption}
+\item[{{\bf Matica} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Matica_8c_a36faa601f0d5f5defe12cc0ce6b27fe1}{}\label{Matica_8c_a36faa601f0d5f5defe12cc0ce6b27fe1}
+
+
+Vypise maticu na obrazovku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia matice. \\
+\hline
+\end{DoxyParams}
+\index{Matica.\+c@{Matica.\+c}!up\+\_\+matica\+\_\+vytvor@{up\+\_\+matica\+\_\+vytvor}}
+\index{up\+\_\+matica\+\_\+vytvor@{up\+\_\+matica\+\_\+vytvor}!Matica.\+c@{Matica.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+matica\+\_\+vytvor(size\+\_\+t velkost\+\_\+strany)}{up_matica_vytvor(size_t velkost_strany)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matica}$\ast$ up\+\_\+matica\+\_\+vytvor (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{velkost\+\_\+strany}
+\end{DoxyParamCaption}
+)}\hypertarget{Matica_8c_ada67edbf7d426d1e1fda7d379344ea27}{}\label{Matica_8c_ada67edbf7d426d1e1fda7d379344ea27}
+
+
+Inicializacia matice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em velkost\+\_\+strany} & Velkost strany matice, s ktorou ma byt vytvorena. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia matice. 
+\end{DoxyReturn}
+\index{Matica.\+c@{Matica.\+c}!up\+\_\+matica\+\_\+zrus@{up\+\_\+matica\+\_\+zrus}}
+\index{up\+\_\+matica\+\_\+zrus@{up\+\_\+matica\+\_\+zrus}!Matica.\+c@{Matica.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+matica\+\_\+zrus(\+Matica $\ast$inst)}{up_matica_zrus(Matica *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+matica\+\_\+zrus (
+\begin{DoxyParamCaption}
+\item[{{\bf Matica} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Matica_8c_aa122f233d1f23bf8c4a84ab54aef6d01}{}\label{Matica_8c_aa122f233d1f23bf8c4a84ab54aef6d01}
+
+
+Zrusi maticu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia matice. \\
+\hline
+\end{DoxyParams}

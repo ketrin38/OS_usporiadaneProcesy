@@ -1,14 +1,66 @@
+/**
+ * @file Matica.h
+ * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
+ * @date 20 Dec 2016
+ * @brief Modul zodpoveny za riadenie a vytvorenie incidencnej matice.
+ */
+ 
 #ifndef MATICA_H
 #define MATICA_H
 
+/**
+ * @file Matica.h
+ * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
+ * @date 20 Dec 2016
+ * @brief Modul zodpoveny za riadenie a vytvorenie incidencnej matice.
+ */
+
+/**
+ * @brief Pseudo-objekt specifikuje atributy
+ *
+ * Reprezentuje instanciu matice.
+ */
 typedef struct _Matica {
-	int** pole;
-	size_t velkost_strany;
+	int** pole; /**< Pole matice. */
+	size_t velkost_strany; /**< Velkost strany matice */
 } Matica;
 
+/**
+ * @brief Inicializacia matice.
+ *
+ * @param velkost_strany Velkost strany matice, s ktorou ma byt vytvorena.
+ * @return Instancia matice.
+ */
 extern Matica* up_matica_vytvor(size_t velkost_strany);
+
+/**
+ * @brief Vrati pole matice.
+ *
+ * @param inst Instancia matice.
+ * @return Pole matice.
+ */
 extern int** up_matica_vrat_pole(Matica* inst);
+
+/**
+ * @brief Vrati velkost matice.
+ *
+ * @param inst Instancia matice.
+ * @return Velkost matice.
+ */
 extern size_t up_matica_daj_velkost (Matica* inst);
+
+/**
+ * @brief Vypise maticu na obrazovku.
+ *
+ * @param inst Instancia matice.
+ */
+extern void up_matica_vypis(Matica *inst);
+
+/**
+ * @brief Zrusi maticu.
+ *
+ * @param inst Instancia matice.
+ */
 extern void up_matica_zrus(Matica* inst);
 
 #endif

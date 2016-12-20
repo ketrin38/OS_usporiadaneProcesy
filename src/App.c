@@ -1,3 +1,10 @@
+/**
+ * @file App.c
+ * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
+ * @date 20 Dec 2016
+ * @brief Modul zodpoveny za beh aplikacie.
+ */
+ 
 #define _GNU_SOURCE
 
 #include <stdio.h>

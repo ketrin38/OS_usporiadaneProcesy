@@ -1,15 +1,14 @@
-#ifndef PARSER_H
-#define PARSER_H
-
-#include "Matica.h"
-
 /**
  * @file Parser.h
  * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
  * @date 20 Dec 2016
  * @brief Modul zodpoveny za riadenie a vytvorenie incidencnej matice.
  */
+ 
+#ifndef PARSER_H
+#define PARSER_H
 
+#include "Matica.h"
 
 /**
  * @brief Nacita vstupny subor orientovaneho grafu, spracuje a vytvori incidencnu maticu.

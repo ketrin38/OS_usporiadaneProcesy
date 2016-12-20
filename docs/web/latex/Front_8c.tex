@@ -1,0 +1,176 @@
+\hypertarget{Front_8c}{}\section{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Front.c File Reference}
+\label{Front_8c}\index{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Front.\+c@{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Front.\+c}}
+
+
+Modul zodpoveny za riadenie a vytvorenie udajovej strukury front.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Front.\+h\char`\"{}}\\*
+Include dependency graph for Front.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{Front_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries P\+O\+V\+O\+D\+N\+A\+\_\+\+V\+E\+L\+K\+O\+ST}~20\hypertarget{Front_8c_ad8c4675683d6f185a8394dfa1bd1ed61}{}\label{Front_8c_ad8c4675683d6f185a8394dfa1bd1ed61}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$ \hyperlink{Front_8c_a0c58eb9ce291fecc6b520a9a00130de8}{up\+\_\+front\+\_\+vytvor} ()
+\begin{DoxyCompactList}\small\item\em Inicializuje front. \end{DoxyCompactList}\item 
+void \hyperlink{Front_8c_aa5f6d4ff6866b68e7a82ab188d1e582d}{up\+\_\+front\+\_\+zrus} (\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Zrusenie frontu. \end{DoxyCompactList}\item 
+void \hyperlink{Front_8c_ac80877645f112df1ece1c73b06f79a80}{up\+\_\+front\+\_\+push} (\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$inst, void $\ast$prvok)
+\begin{DoxyCompactList}\small\item\em Pridanie prvku do frontu. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{Front_8c_ae43c9590e0c795e07914f0965aa917da}{up\+\_\+front\+\_\+pop} (\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Odobratie prvku z frontu. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{Front_8c_a23dea24023ffd88914ef499bf0d0c64c}{up\+\_\+front\+\_\+peek} (\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Spristupnenie prveho prvku na pop. \end{DoxyCompactList}\item 
+int \hyperlink{Front_8c_a63e5753b29437dde3926a4b91ca344b1}{up\+\_\+front\+\_\+je\+\_\+prazdny} (\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Zisti, ci je front prazdny. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{Front_8c_a92a54c47c61758146e7c9205f598938f}{up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov} (\hyperlink{Front_8h_aeda6f9a18e68a801590717ec948afc22}{Front} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Vrati pocet prvkov frontu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Modul zodpoveny za riadenie a vytvorenie udajovej strukury front. 
+
+\begin{DoxyAuthor}{Author}
+Katarina Pilarcikova $<$\href{mailto:ketrin.pilarcik@gmail.com}{\tt ketrin.\+pilarcik@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Dec 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov@{up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov}}
+\index{up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov@{up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov(\+Front $\ast$inst)}{up_front_daj_poc_prvkov(Front *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t up\+\_\+front\+\_\+daj\+\_\+poc\+\_\+prvkov (
+\begin{DoxyParamCaption}
+\item[{{\bf Front} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_a92a54c47c61758146e7c9205f598938f}{}\label{Front_8c_a92a54c47c61758146e7c9205f598938f}
+
+
+Vrati pocet prvkov frontu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia frontu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t Aktualny pocet prvkov frontu. 
+\end{DoxyReturn}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+je\+\_\+prazdny@{up\+\_\+front\+\_\+je\+\_\+prazdny}}
+\index{up\+\_\+front\+\_\+je\+\_\+prazdny@{up\+\_\+front\+\_\+je\+\_\+prazdny}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+je\+\_\+prazdny(\+Front $\ast$inst)}{up_front_je_prazdny(Front *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}int up\+\_\+front\+\_\+je\+\_\+prazdny (
+\begin{DoxyParamCaption}
+\item[{{\bf Front} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_a63e5753b29437dde3926a4b91ca344b1}{}\label{Front_8c_a63e5753b29437dde3926a4b91ca344b1}
+
+
+Zisti, ci je front prazdny. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia frontu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 ak obsahuje prvky, 1 aj je prazdny. 
+\end{DoxyReturn}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+peek@{up\+\_\+front\+\_\+peek}}
+\index{up\+\_\+front\+\_\+peek@{up\+\_\+front\+\_\+peek}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+peek(\+Front $\ast$inst)}{up_front_peek(Front *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ up\+\_\+front\+\_\+peek (
+\begin{DoxyParamCaption}
+\item[{{\bf Front} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_a23dea24023ffd88914ef499bf0d0c64c}{}\label{Front_8c_a23dea24023ffd88914ef499bf0d0c64c}
+
+
+Spristupnenie prveho prvku na pop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia frontu z ktoreho zistujeme prvok. \\
+\hline
+\end{DoxyParams}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+pop@{up\+\_\+front\+\_\+pop}}
+\index{up\+\_\+front\+\_\+pop@{up\+\_\+front\+\_\+pop}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+pop(\+Front $\ast$inst)}{up_front_pop(Front *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ up\+\_\+front\+\_\+pop (
+\begin{DoxyParamCaption}
+\item[{{\bf Front} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_ae43c9590e0c795e07914f0965aa917da}{}\label{Front_8c_ae43c9590e0c795e07914f0965aa917da}
+
+
+Odobratie prvku z frontu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia frontu z ktoreho vyberame. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prvok z prvy vo fronte. 
+\end{DoxyReturn}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+push@{up\+\_\+front\+\_\+push}}
+\index{up\+\_\+front\+\_\+push@{up\+\_\+front\+\_\+push}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+push(\+Front $\ast$inst, void $\ast$prvok)}{up_front_push(Front *inst, void *prvok)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+front\+\_\+push (
+\begin{DoxyParamCaption}
+\item[{{\bf Front} $\ast$}]{inst, }
+\item[{void $\ast$}]{prvok}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_ac80877645f112df1ece1c73b06f79a80}{}\label{Front_8c_ac80877645f112df1ece1c73b06f79a80}
+
+
+Pridanie prvku do frontu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Instancia frontu do ktoreho chceme pridat prvok. \\
+\hline
+{\em prvok} & Pridavany prvok do frontu. \\
+\hline
+\end{DoxyParams}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+vytvor@{up\+\_\+front\+\_\+vytvor}}
+\index{up\+\_\+front\+\_\+vytvor@{up\+\_\+front\+\_\+vytvor}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+vytvor()}{up_front_vytvor()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Front}$\ast$ up\+\_\+front\+\_\+vytvor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_a0c58eb9ce291fecc6b520a9a00130de8}{}\label{Front_8c_a0c58eb9ce291fecc6b520a9a00130de8}
+
+
+Inicializuje front. 
+
+\begin{DoxyReturn}{Returns}
+Pointer na instanciu frontu 
+\end{DoxyReturn}
+\index{Front.\+c@{Front.\+c}!up\+\_\+front\+\_\+zrus@{up\+\_\+front\+\_\+zrus}}
+\index{up\+\_\+front\+\_\+zrus@{up\+\_\+front\+\_\+zrus}!Front.\+c@{Front.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+front\+\_\+zrus(\+Front $\ast$inst)}{up_front_zrus(Front *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+front\+\_\+zrus (
+\begin{DoxyParamCaption}
+\item[{{\bf Front} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{Front_8c_aa5f6d4ff6866b68e7a82ab188d1e582d}{}\label{Front_8c_aa5f6d4ff6866b68e7a82ab188d1e582d}
+
+
+Zrusenie frontu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Smernik na instanciu frontu, kt pozadujeme zrusit. \\
+\hline
+\end{DoxyParams}

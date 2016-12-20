@@ -56,12 +56,13 @@ function spustiVolbuDokumentacia() {
 # Vypise dokumentaciu k semestralnej praci
 #
 function vypisDokumentaciu() {
-  printf "TU vypisem nadhernu dokumentaciu\n\n"
+  printf "Vypisanie dokumentacie .... "
+  find ./docs/txt/ -type f -name dokumentacia.txt 2>/dev/null | xargs cat | more
 }
 
 function spustiProgram() {
 	make
-	.bin/usp_procesy.o
+	./bin/usp_procesy
 	return 0
 }
 

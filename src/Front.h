@@ -1,12 +1,12 @@
-#ifndef FRONT_H
-#define FRONT_H
-
 /**
  * @file Front.h
  * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
  * @date 20 Dec 2016
  * @brief Modul zodpoveny za riadenie a vytvorenie udajovej strukury front.
  */
+ 
+#ifndef FRONT_H
+#define FRONT_H
 
 /**
  * @brief Pseudo-objekt specifikacia atributov.

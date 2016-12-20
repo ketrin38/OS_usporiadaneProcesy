@@ -1,18 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "_",
-  1: "_"
+  0: "_afmnpuv",
+  1: "_",
+  2: "afmp",
+  3: "u",
+  4: "anpv",
+  5: "afm"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "variables",
+  5: "typedefs"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes"
+  1: "Classes",
+  2: "Files",
+  3: "Functions",
+  4: "Variables",
+  5: "Typedefs"
 };
 

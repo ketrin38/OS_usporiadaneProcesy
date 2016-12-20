@@ -56,17 +56,18 @@ function spustiVolbuDokumentacia() {
 # Vypise dokumentaciu k semestralnej praci
 #
 function vypisDokumentaciu() {
-  printf "TU vypisem nadhernu dokumentaciu\n\n"
+  printf "Vypisanie dokumentacie .... "
+  find ./docs/txt/ -type f -name dokumentacia.txt 2>/dev/null | xargs cat | more
 }
 
 function spustiProgram() {
 	make
-	.bin/usp_procesy.o
+	./bin/usp_procesy
 	return 0
 }
 
 function zobrazZdrojKod() {
-	echo "Zobrazenie zdrojovych subo"
+	echo "Zoznam zdrojovych suborov : \n"
 	find ./src -type f -perm /a=x 2>/dev/null | xargs ls
 	read -p "Zdajte nazov suboru :" nazov
 	# najst subor + otvorit a nastrankovat

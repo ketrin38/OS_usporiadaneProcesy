@@ -1,0 +1,109 @@
+\hypertarget{App_8h}{}\section{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+App.h File Reference}
+\label{App_8h}\index{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+App.\+h@{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+App.\+h}}
+
+
+Modul zodpoveny za beh aplikacie.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{App_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__App}{\+\_\+\+App}
+\begin{DoxyCompactList}\small\item\em Pseudo-\/objekt specifikacia atributov. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__App}{\+\_\+\+App} \hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App}
+\begin{DoxyCompactList}\small\item\em Pseudo-\/objekt specifikacia atributov. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App} $\ast$ \hyperlink{App_8h_a7d31f8de14472b087ff0702d57e51681}{up\+\_\+app\+\_\+vytvor} (const char $\ast$nazov\+\_\+suboru)
+\begin{DoxyCompactList}\small\item\em Inicializacia aplikacie. \end{DoxyCompactList}\item 
+void \hyperlink{App_8h_a86f98cac61be0021e6c9141b6a851c0b}{up\+\_\+app\+\_\+spusti} (\hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Spustenie instancie aplikacie. \end{DoxyCompactList}\item 
+void \hyperlink{App_8h_ac98160b7755b6ea854f87124264028c1}{up\+\_\+app\+\_\+zrus} (\hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Zrusenie instancie aplikacie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Modul zodpoveny za beh aplikacie. 
+
+\begin{DoxyAuthor}{Author}
+Katarina Pilarcikova $<$\href{mailto:ketrin.pilarcik@gmail.com}{\tt ketrin.\+pilarcik@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Dec 2016 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{App.\+h@{App.\+h}!App@{App}}
+\index{App@{App}!App.\+h@{App.\+h}}
+\subsubsection[{\texorpdfstring{App}{App}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+App}  {\bf App}}\hypertarget{App_8h_a2d680e4981162fefe41e66f322ca6086}{}\label{App_8h_a2d680e4981162fefe41e66f322ca6086}
+
+
+Pseudo-\/objekt specifikacia atributov. 
+
+Reprezentuje instanciu aplikacie 
+
+\subsection{Function Documentation}
+\index{App.\+h@{App.\+h}!up\+\_\+app\+\_\+spusti@{up\+\_\+app\+\_\+spusti}}
+\index{up\+\_\+app\+\_\+spusti@{up\+\_\+app\+\_\+spusti}!App.\+h@{App.\+h}}
+\subsubsection[{\texorpdfstring{up\+\_\+app\+\_\+spusti(\+App $\ast$inst)}{up_app_spusti(App *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+app\+\_\+spusti (
+\begin{DoxyParamCaption}
+\item[{{\bf App} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{App_8h_a86f98cac61be0021e6c9141b6a851c0b}{}\label{App_8h_a86f98cac61be0021e6c9141b6a851c0b}
+
+
+Spustenie instancie aplikacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Smernik na aplikaciu, kt. pozadujeme spustit. \\
+\hline
+\end{DoxyParams}
+\index{App.\+h@{App.\+h}!up\+\_\+app\+\_\+vytvor@{up\+\_\+app\+\_\+vytvor}}
+\index{up\+\_\+app\+\_\+vytvor@{up\+\_\+app\+\_\+vytvor}!App.\+h@{App.\+h}}
+\subsubsection[{\texorpdfstring{up\+\_\+app\+\_\+vytvor(const char $\ast$nazov\+\_\+suboru)}{up_app_vytvor(const char *nazov_suboru)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App}$\ast$ up\+\_\+app\+\_\+vytvor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nazov\+\_\+suboru}
+\end{DoxyParamCaption}
+)}\hypertarget{App_8h_a7d31f8de14472b087ff0702d57e51681}{}\label{App_8h_a7d31f8de14472b087ff0702d57e51681}
+
+
+Inicializacia aplikacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazov\+\_\+suboru} & Nazov vstupneho suboru s orientovanym grafom. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia matice. 
+\end{DoxyReturn}
+\index{App.\+h@{App.\+h}!up\+\_\+app\+\_\+zrus@{up\+\_\+app\+\_\+zrus}}
+\index{up\+\_\+app\+\_\+zrus@{up\+\_\+app\+\_\+zrus}!App.\+h@{App.\+h}}
+\subsubsection[{\texorpdfstring{up\+\_\+app\+\_\+zrus(\+App $\ast$inst)}{up_app_zrus(App *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+app\+\_\+zrus (
+\begin{DoxyParamCaption}
+\item[{{\bf App} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{App_8h_ac98160b7755b6ea854f87124264028c1}{}\label{App_8h_ac98160b7755b6ea854f87124264028c1}
+
+
+Zrusenie instancie aplikacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Smernik na aplikaciu, kt. pozadujeme zrusit. \\
+\hline
+\end{DoxyParams}

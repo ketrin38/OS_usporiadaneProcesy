@@ -1,0 +1,72 @@
+\hypertarget{Parser_8c}{}\section{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Parser.c File Reference}
+\label{Parser_8c}\index{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Parser.\+c@{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+Parser.\+c}}
+
+
+Modul zodpoveny za riadenie a vytvorenie incidencnej matice.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$ctype.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Matica.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Parser.\+h\char`\"{}}\\*
+Include dependency graph for Parser.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Parser_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries M\+A\+X\+\_\+\+P\+O\+C\+E\+T\+\_\+\+R\+I\+A\+D\+K\+OV}~3\hypertarget{Parser_8c_a2a907cd840b139cc1c5094b866e2417b}{}\label{Parser_8c_a2a907cd840b139cc1c5094b866e2417b}
+
+\item 
+\#define {\bfseries M\+A\+X\+\_\+\+D\+L\+Z\+K\+A\+\_\+\+R\+I\+A\+D\+KU}~50\hypertarget{Parser_8c_a3113fa2be67b23919e0b59dd45f1b3c4}{}\label{Parser_8c_a3113fa2be67b23919e0b59dd45f1b3c4}
+
+\item 
+\#define {\bfseries Z\+N\+A\+K\+\_\+\+N\+A\+\_\+\+C\+I\+S\+LO}(z)~((z) -\/ \textquotesingle{}0\textquotesingle{})\hypertarget{Parser_8c_a920b2ae9d7814a696f0edb31b126e276}{}\label{Parser_8c_a920b2ae9d7814a696f0edb31b126e276}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Matica_8h_a785a7a4c713ff8e23354dd49e33b1fef}{Matica} $\ast$ \hyperlink{Parser_8c_a0149f861c9d51481d09195aa78ef3f5f}{up\+\_\+parser\+\_\+nacitaj\+\_\+subor} (const char $\ast$nazov\+\_\+suboru)
+\begin{DoxyCompactList}\small\item\em Nacita vstupny subor orientovaneho grafu, spracuje a vytvori incidencnu maticu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Modul zodpoveny za riadenie a vytvorenie incidencnej matice. 
+
+\begin{DoxyAuthor}{Author}
+Katarina Pilarcikova $<$\href{mailto:ketrin.pilarcik@gmail.com}{\tt ketrin.\+pilarcik@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Dec 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Parser.\+c@{Parser.\+c}!up\+\_\+parser\+\_\+nacitaj\+\_\+subor@{up\+\_\+parser\+\_\+nacitaj\+\_\+subor}}
+\index{up\+\_\+parser\+\_\+nacitaj\+\_\+subor@{up\+\_\+parser\+\_\+nacitaj\+\_\+subor}!Parser.\+c@{Parser.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+parser\+\_\+nacitaj\+\_\+subor(const char $\ast$nazov\+\_\+suboru)}{up_parser_nacitaj_subor(const char *nazov_suboru)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matica}$\ast$ up\+\_\+parser\+\_\+nacitaj\+\_\+subor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nazov\+\_\+suboru}
+\end{DoxyParamCaption}
+)}\hypertarget{Parser_8c_a0149f861c9d51481d09195aa78ef3f5f}{}\label{Parser_8c_a0149f861c9d51481d09195aa78ef3f5f}
+
+
+Nacita vstupny subor orientovaneho grafu, spracuje a vytvori incidencnu maticu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazov\+\_\+suboru} & Nazov vstupneho suboru s orientovanym grafom. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia matice. 
+\end{DoxyReturn}

@@ -1,3 +1,10 @@
+/**
+ * @file main.c
+ * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
+ * @date 20 Dec 2016
+ * @brief Modul zodpoveny za riadenie a vytvorenie udajovej strukury front.
+ */
+ 
 #include <stdlib.h>
 #include <stdio.h>
 

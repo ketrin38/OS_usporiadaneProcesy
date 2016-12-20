@@ -1,0 +1,129 @@
+\hypertarget{App_8c}{}\section{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+App.c File Reference}
+\label{App_8c}\index{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+App.\+c@{/home/katka/\+Documents/\+O\+S\+\_\+usporiadane\+Procesy/src/\+App.\+c}}
+
+
+Modul zodpoveny za beh aplikacie.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$errno.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$sys/types.\+h$>$}\\*
+{\ttfamily \#include $<$fcntl.\+h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\+h$>$}\\*
+{\ttfamily \#include $<$sys/ipc.\+h$>$}\\*
+{\ttfamily \#include $<$sys/shm.\+h$>$}\\*
+{\ttfamily \#include $<$sys/mman.\+h$>$}\\*
+{\ttfamily \#include $<$semaphore.\+h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Parser.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}App.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Front.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Matica.\+h\char`\"{}}\\*
+Include dependency graph for App.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{App_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Proces}{\+\_\+\+Proces}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries \+\_\+\+G\+N\+U\+\_\+\+S\+O\+U\+R\+CE}\hypertarget{App_8c_a369266c24eacffb87046522897a570d5}{}\label{App_8c_a369266c24eacffb87046522897a570d5}
+
+\item 
+\#define {\bfseries P\+A\+M\+A\+T\+\_\+\+V\+E\+L\+K\+O\+ST}~4\hypertarget{App_8c_a34b7c9b81912f2424802a302770daa28}{}\label{App_8c_a34b7c9b81912f2424802a302770daa28}
+
+\item 
+\#define {\bfseries Z\+D\+\_\+\+P\+A\+M\+A\+T\+\_\+\+K\+L\+UC}~292929\hypertarget{App_8c_a257c4dc7d9729c3bc5e1fd1d2cb734a9}{}\label{App_8c_a257c4dc7d9729c3bc5e1fd1d2cb734a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Proces}{\+\_\+\+Proces} {\bfseries Proces}\hypertarget{App_8c_a26e9b69d50adacb680805ff89ce5854c}{}\label{App_8c_a26e9b69d50adacb680805ff89ce5854c}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App} $\ast$ \hyperlink{App_8c_a7d31f8de14472b087ff0702d57e51681}{up\+\_\+app\+\_\+vytvor} (const char $\ast$nazov\+\_\+suboru)
+\begin{DoxyCompactList}\small\item\em Inicializacia aplikacie. \end{DoxyCompactList}\item 
+void \hyperlink{App_8c_a86f98cac61be0021e6c9141b6a851c0b}{up\+\_\+app\+\_\+spusti} (\hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Spustenie instancie aplikacie. \end{DoxyCompactList}\item 
+void \hyperlink{App_8c_ac98160b7755b6ea854f87124264028c1}{up\+\_\+app\+\_\+zrus} (\hyperlink{App_8h_a2d680e4981162fefe41e66f322ca6086}{App} $\ast$inst)
+\begin{DoxyCompactList}\small\item\em Zrusenie instancie aplikacie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Modul zodpoveny za beh aplikacie. 
+
+\begin{DoxyAuthor}{Author}
+Katarina Pilarcikova $<$\href{mailto:ketrin.pilarcik@gmail.com}{\tt ketrin.\+pilarcik@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20 Dec 2016 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{App.\+c@{App.\+c}!up\+\_\+app\+\_\+spusti@{up\+\_\+app\+\_\+spusti}}
+\index{up\+\_\+app\+\_\+spusti@{up\+\_\+app\+\_\+spusti}!App.\+c@{App.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+app\+\_\+spusti(\+App $\ast$inst)}{up_app_spusti(App *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+app\+\_\+spusti (
+\begin{DoxyParamCaption}
+\item[{{\bf App} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{App_8c_a86f98cac61be0021e6c9141b6a851c0b}{}\label{App_8c_a86f98cac61be0021e6c9141b6a851c0b}
+
+
+Spustenie instancie aplikacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Smernik na aplikaciu, kt. pozadujeme spustit. \\
+\hline
+\end{DoxyParams}
+\index{App.\+c@{App.\+c}!up\+\_\+app\+\_\+vytvor@{up\+\_\+app\+\_\+vytvor}}
+\index{up\+\_\+app\+\_\+vytvor@{up\+\_\+app\+\_\+vytvor}!App.\+c@{App.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+app\+\_\+vytvor(const char $\ast$nazov\+\_\+suboru)}{up_app_vytvor(const char *nazov_suboru)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf App}$\ast$ up\+\_\+app\+\_\+vytvor (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{nazov\+\_\+suboru}
+\end{DoxyParamCaption}
+)}\hypertarget{App_8c_a7d31f8de14472b087ff0702d57e51681}{}\label{App_8c_a7d31f8de14472b087ff0702d57e51681}
+
+
+Inicializacia aplikacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazov\+\_\+suboru} & Nazov vstupneho suboru s orientovanym grafom. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia matice. 
+\end{DoxyReturn}
+\index{App.\+c@{App.\+c}!up\+\_\+app\+\_\+zrus@{up\+\_\+app\+\_\+zrus}}
+\index{up\+\_\+app\+\_\+zrus@{up\+\_\+app\+\_\+zrus}!App.\+c@{App.\+c}}
+\subsubsection[{\texorpdfstring{up\+\_\+app\+\_\+zrus(\+App $\ast$inst)}{up_app_zrus(App *inst)}}]{\setlength{\rightskip}{0pt plus 5cm}void up\+\_\+app\+\_\+zrus (
+\begin{DoxyParamCaption}
+\item[{{\bf App} $\ast$}]{inst}
+\end{DoxyParamCaption}
+)}\hypertarget{App_8c_ac98160b7755b6ea854f87124264028c1}{}\label{App_8c_ac98160b7755b6ea854f87124264028c1}
+
+
+Zrusenie instancie aplikacie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst} & Smernik na aplikaciu, kt. pozadujeme zrusit. \\
+\hline
+\end{DoxyParams}

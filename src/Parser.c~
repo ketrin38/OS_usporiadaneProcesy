@@ -88,7 +88,6 @@ static void zrus_subor_pamat (char **buffer, int poc_riadkov)
 static void nacitaj_riadok (const char** buffer, int** inc_matica,
 	int riadok_index, int predosly_proces, int poz, int poc_riadkov)
 {
-	int spoj = 0;
 	int i = poz;
 	char aktualny_znak = buffer[riadok_index][i];
 	while (aktualny_znak != '\0') {
@@ -97,12 +96,9 @@ static void nacitaj_riadok (const char** buffer, int** inc_matica,
 			int cislo_proc = (int) ZNAK_NA_CISLO(aktualny_znak);
 			if (predosly_proces == 0) {
 			} else {
-				int hodnota = spoj ? -1 : 1;
-				inc_matica[predosly_proces - 1][cislo_proc - 1] = hodnota;
+				inc_matica[predosly_proces - 1][cislo_proc - 1] = 1;
 			}
 			predosly_proces = cislo_proc;
-		} else if (aktualny_znak == '*') {
-			spoj = 1;
 		}
 		
 		if (riadok_index >= 2) {

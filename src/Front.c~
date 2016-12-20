@@ -1,3 +1,10 @@
+/**
+ * @file Front.C
+ * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
+ * @date 20 Dec 2016
+ * @brief Modul zodpoveny za riadenie a vytvorenie udajovej strukury front.
+ */
+ 
 #include <stdlib.h>
 #include "Front.h"
 
@@ -18,7 +25,6 @@ void up_front_zrus(Front* inst){
 }
 
 void up_front_push(Front* inst, void* prvok) {
-	printf("Push at %d\n", inst->akt_pozicia_push);
 	inst->pole[inst->akt_pozicia_push++] = prvok;
 	inst->poc_prkov++;
 }

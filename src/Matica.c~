@@ -31,8 +31,8 @@ void up_matica_vypis(Matica *inst)
 	for (size_t i = 0; i < inst->velkost_strany; i++) {
 		char *oddelovac = " ";
 		for (size_t j = 0; j < inst->velkost_strany; j++) {
-			printf("%s %3d", oddelovac, inst->pole[i][j]);
-			oddelovac = "|";
+			printf("%s%3d", oddelovac, inst->pole[i][j]);
+			oddelovac = " |";
 		}
 		printf("\n");	
 	}

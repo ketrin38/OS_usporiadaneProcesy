@@ -1,3 +1,10 @@
+/**
+ * @file Parser.c
+ * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
+ * @date 20 Dec 2016
+ * @brief Modul zodpoveny za riadenie a vytvorenie incidencnej matice.
+ */
+ 
 #include <stdio.h>
 #include <ctype.h>
 #include <errno.h>

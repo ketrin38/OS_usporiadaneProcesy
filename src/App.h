@@ -1,12 +1,12 @@
-#ifndef APP_H
-#define APP_H
-
 /**
  * @file App.h
  * @author Katarina Pilarcikova <ketrin.pilarcik@gmail.com
  * @date 20 Dec 2016
  * @brief Modul zodpoveny za beh aplikacie.
  */
+ 
+#ifndef APP_H
+#define APP_H
 
 /**
  * @brief Pseudo-objekt specifikacia atributov
