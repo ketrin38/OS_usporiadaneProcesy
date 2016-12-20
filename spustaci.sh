@@ -62,7 +62,7 @@ function vypisDokumentaciu() {
 
 function spustiProgram() {
 	make
-	./bin/usp_procesy
+	./bin/usp_procesy "./resources/semestralkaStruktura.txt"
 	return 0
 }
 

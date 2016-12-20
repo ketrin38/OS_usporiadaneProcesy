@@ -62,14 +62,14 @@ function vypisDokumentaciu() {
 
 function spustiProgram() {
 	make
-	./bin/usp_procesy
+	./bin/usp_procesy "./resources/semestralkaStruktura.txt"
 	return 0
 }
 
 function zobrazZdrojKod() {
 	printf "Zoznam zdrojovych suborov : \n"
 	find ./src -maxdepth 1 \( -name "*.h" -or -name "*.c" \) -printf "%f\n"
-	read -p "Zadajte nazov suboru :" nazov
+	read -p "Zadajte nazov suboru :  " nazov
 	less ./src/$nazov
 } 
 

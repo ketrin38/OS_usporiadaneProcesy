@@ -7,15 +7,26 @@
  
 #include <stdlib.h>
 #include <stdio.h>
+#include <libgen.h>
 
 #include "Front.h"
 #include "Parser.h"
 #include "App.h"
 
-int main() {
-	App* app = up_app_vytvor("./resources/semestralkaStruktura.txt");
+static void pouzitie(char* nazov_programu) {
+	printf("Pouzitie programu: %s <nazov_suboru>\n", nazov_programu);
+}
+
+int main(int argc, char* argv[]) {
+	if (argc != 2) {
+		fprintf(stderr, "chyba: neplatne argumenty\n\n");
+		pouzitie(basename(argv[0]));
+		return EXIT_FAILURE;
+	}
+	
+	App* app = up_app_vytvor(argv[1]);
 	up_app_spusti(app);
 	up_app_zrus(app);
 	
-	return 0;
+	return EXIT_SUCCESS;
 } 
