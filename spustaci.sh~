@@ -66,7 +66,7 @@ function spustiProgram() {
 }
 
 function zobrazZdrojKod() {
-	echo "Zoznam zdrojovych suborov : \n"
+	echo "Zobrazenie zdrojovych subo"
 	find ./src -type f -perm /a=x 2>/dev/null | xargs ls
 	read -p "Zdajte nazov suboru :" nazov
 	# najst subor + otvorit a nastrankovat
