@@ -30,7 +30,6 @@
 #define ZD_PAMAT_KLUC 292929
 
 typedef struct _Proces {
-	sem_t * semafor;
 	int koeficient;
 	Front* semafory_wait;  
 	Front* semafory_signal;
@@ -75,7 +74,7 @@ static void nacitaj_procesy(Matica* matica) {
 	int zdielana_pam_id;
 	int* zd_pamat;
 	key_t key = ZD_PAMAT_KLUC;
-	if ((zdielana_pam_id = shmget(key, ZD_PAMAT_KLUC, IPC_CREAT | 0666)) < 0) {
+	if ((zdielana_pam_id = shmget(key, PAMAT_VELKOST, IPC_CREAT | 0666)) < 0) {
 		fprintf(stderr, "chyba pri inicializacii zdielanej pamate");
 		return;
 	}
@@ -132,6 +131,11 @@ static void nacitaj_procesy(Matica* matica) {
 	}
 	
 	printf("\nVYSLEDNA HODNOTA 5! = %d\n", *zd_pamat);
+	
+	for (size_t i = 0; i < matica_velkost; i++) {
+		up_front_zrus(procesy[i].semafory_signal);
+		up_front_zrus(procesy[i].semafory_wait);
+	}
 } 
 
 static void proces_vytvor(Proces *proces, int koeficient) {
@@ -148,7 +152,7 @@ static void proces_vykonaj(Proces* proces) {
 	int zdielana_pam_id;
 	int* zd_pamat;
 	key_t key = ZD_PAMAT_KLUC;
-	if ((zdielana_pam_id = shmget(key, ZD_PAMAT_KLUC, IPC_CREAT | 0666)) < 0) {
+	if ((zdielana_pam_id = shmget(key, PAMAT_VELKOST, IPC_CREAT | 0666)) < 0) {
 		fprintf(stderr, "chyba pri inicializacii zdielanej pamate");
 		return;
 	}
