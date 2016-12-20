@@ -57,7 +57,7 @@ function spustiVolbuDokumentacia() {
 #
 function vypisDokumentaciu() {
   printf "Vypisanie dokumentacie .... "
-  find ./docs/txt/ -type f -name dokumentacia.txt 2>/dev/null | xargs cat | more
+  less ./docs/txt/dokumentacia.txt
 }
 
 function spustiProgram() {
@@ -67,11 +67,10 @@ function spustiProgram() {
 }
 
 function zobrazZdrojKod() {
-	echo "Zoznam zdrojovych suborov : \n"
-	find ./src -type f -perm /a=x 2>/dev/null | xargs ls
-	read -p "Zdajte nazov suboru :" nazov
-	# najst subor + otvorit a nastrankovat
-	find ./src -type f -name $nazov ! -name ".*" 2>/dev/null | xargs cat | more
+	printf "Zoznam zdrojovych suborov : \n"
+	find ./src -maxdepth 1 \( -name "*.h" -or -name "*.c" \) -printf "%f\n"
+	read -p "Zadajte nazov suboru :" nazov
+	less ./src/$nazov
 } 
 
 
